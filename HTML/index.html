@@ -1,11 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+<head>
+  <link rel="stylesheet" href="styles.css" />
+</head>
   <body>
     <h1 id="title">Survey Form</h1>
-    <p id="description">Take the time to fill out this mock survey form</p>
-    <form id="survey-form"><input id="name" type="text" required/></form>
-    <form id="survey-form"><input id="email" type="text" required/></form>
-    <form id="survey-form"><input id="number" type="text" required/></form>
-    <!--requirement #9^^-->
+    <p id="description">Thank you for taking the time to fill out this mock survey form</p>
+    <form id="survey-form">
+      <label id="name-label"><input id="name" type="text" placeholder="Enter your name" required/>Eli Perrin</label>
+    </form>
+    <form id="survey-form">
+      <label id="email-label"><input id="email" type="email" placeholder="Enter your email" required/>elicperrin@gmail.com</label>
+    </form>
+    <form id="survey-form">
+      <label id="number-label" type="number"><input id="number" type="number" min="0000000000" max="10000000000" placeholder="Phone Number" required/>1234567890</label>
+    </form>
+    <form id="survey-form">
+      <label id="description">What's your favorite type of web developement?</label>
+      <select id="dropdown">
+        <option>(select one)</option>
+        <option>Front-end</option>
+        <option>Back-end</option>
+        <option>Full-stack</option>
+        <option>Data Analysis</option>
+        <option>Machine Learning</option>
+        <option>Other</option>
+      </select>
+    </form>
+    <form id="survey-form">
+      <label id="description">Would you recommend this survey to a friend?</label>
+      <label id="group-selection" ><input name="recommend-button" id="sure-button" type="radio" value="recommend-button" />Sure</label>
+      <label id="group-selection"><input name="recommend-button" id="maybe-button" type="radio" value="recommend-button" />Maybe</label>
+      <label id="group-selction"><input name="recommend-button" id="probably-not-button" type="radio" value="recommend-button" />Probably not</label>
+    <form id="survey-form">
+      <label id="description">(Checkbox Description)</label>
+      <label id="checkboxes"><input name="check1" type="checkbox" value="value1" /></label>
+      <label id="checkboxes"><input name="check2" type="checkbox" value="value2" /></label>
+      <label id="checkboxes"><input name="check3" type="checkbox" value="value3" /></label>
+    </form>
+    <form id="survey-form">
+      <label id="description">Any comments of suggestions?</label>
+      <textarea id="comments" placeholder="Enter comment here"></textarea>
+    </form>
+    <form id="survey-form">
+      <label id="submit-button"><input id="submit" type="submit" />
+    </form>
   </body>
 </html>
